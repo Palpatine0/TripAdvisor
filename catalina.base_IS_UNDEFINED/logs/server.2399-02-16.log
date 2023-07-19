@@ -1,0 +1,764 @@
+12:10:56.960 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 22756 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+12:10:56.967 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+12:10:59.779 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:10:59.792 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:10:59.794 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+12:10:59.795 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+12:10:59.965 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:10:59.965 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2873 ms
+12:11:03.851 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc7db89, org.springframework.security.web.context.SecurityContextPersistenceFilter@78fe204a, org.springframework.security.web.header.HeaderWriterFilter@4b432e53, org.springframework.web.filter.CorsFilter@479ac2cb, org.springframework.security.web.authentication.logout.LogoutFilter@63f855b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@399ca607, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71a3e05c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78d9f51b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@220c9a63, org.springframework.security.web.session.SessionManagementFilter@62f11ebb, org.springframework.security.web.access.ExceptionTranslationFilter@7951c3a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f95881a]
+12:11:03.990 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:11:04.024 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:11:04.045 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 8.089 seconds (JVM running for 10.923)
+12:11:04.275 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:11:04.275 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:11:04.277 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:18:09.918 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 22216 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+13:18:09.923 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+13:18:12.202 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+13:18:12.216 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:18:12.217 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:18:12.218 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+13:18:12.371 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:18:12.372 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2366 ms
+13:18:15.752 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b1e5e55, org.springframework.security.web.context.SecurityContextPersistenceFilter@21bd128b, org.springframework.security.web.header.HeaderWriterFilter@7951c3a2, org.springframework.web.filter.CorsFilter@4c1d59cd, org.springframework.security.web.authentication.logout.LogoutFilter@7df28f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@321ca237, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55fdf7f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40113163, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76cf841, org.springframework.security.web.session.SessionManagementFilter@2d119405, org.springframework.security.web.access.ExceptionTranslationFilter@1b01a0d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3453acd2]
+13:18:15.851 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:18:15.889 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+13:18:15.906 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.702 seconds (JVM running for 8.39)
+13:18:17.230 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:18:17.231 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:18:17.233 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:25:03.765 [http-nio-8080-exec-6] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "/frontdesk/myfavorite.html": Error resolving template [/frontdesk/myfavorite.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/myfavorite.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:25:03.772 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/myfavorite.html], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/myfavorite.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:25:33.043 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:25:34.167 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:25:39.964 [http-nio-8080-exec-5] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/role/all, visitTime=Thu Feb 16 13:25:39 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=106, exceptionMessage=null)
+13:25:42.429 [http-nio-8080-exec-5] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:25:42 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=34, exceptionMessage=null)
+13:25:46.826 [http-nio-8080-exec-1] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:25:46 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:26:54.924 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:26:54 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=37, exceptionMessage=null)
+13:26:54.973 [http-nio-8080-exec-4] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:26:54 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+13:27:02.001 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:27:01 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=10, exceptionMessage=null)
+13:27:20.089 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:27:20 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+13:27:20.121 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:27:20 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+13:27:22.745 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:27:22 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=7, exceptionMessage=null)
+13:27:29.547 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:27:29 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+13:27:29.574 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:27:29 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:28:03.660 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:28:03 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=9, exceptionMessage=null)
+13:28:08.405 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:28:08 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=11, exceptionMessage=null)
+13:28:08.437 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:28:08 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+13:28:11.238 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:28:11 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=9, exceptionMessage=null)
+13:28:18.055 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:28:18 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:28:18.079 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:28:18 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=10, exceptionMessage=null)
+13:28:21.244 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:28:21 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=8, exceptionMessage=null)
+13:28:24.969 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:28:24 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=11, exceptionMessage=null)
+13:28:25.000 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:28:24 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=14, exceptionMessage=null)
+13:28:27.631 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:28:27 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=9, exceptionMessage=null)
+13:28:32.065 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:28:32 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=11, exceptionMessage=null)
+13:28:32.094 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:28:32 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:28:35.072 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/edit, visitTime=Thu Feb 16 13:28:35 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=8, exceptionMessage=null)
+13:28:38.855 [http-nio-8080-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/update, visitTime=Thu Feb 16 13:28:38 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:28:38.885 [http-nio-8080-exec-6] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/category/all, visitTime=Thu Feb 16 13:28:38 CST 2023, username=palpatine, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+13:29:42.007 [http-nio-8080-exec-5] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "/frontdesk/checkCode": Error resolving template [/frontdesk/checkCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/checkCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:29:42.011 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/checkCode], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frontdesk/checkCode], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+13:38:40.215 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 23936 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+13:38:40.220 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+13:38:42.257 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+13:38:42.265 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+13:38:42.266 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:38:42.267 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+13:38:42.406 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:38:42.407 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2098 ms
+13:38:45.570 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20ead579, org.springframework.security.web.context.SecurityContextPersistenceFilter@c889805, org.springframework.security.web.header.HeaderWriterFilter@40113163, org.springframework.web.filter.CorsFilter@5426cb36, org.springframework.security.web.authentication.logout.LogoutFilter@1934ad7c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f1266c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7df28f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ec22831, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65e22def, org.springframework.security.web.session.SessionManagementFilter@39c85c1a, org.springframework.security.web.access.ExceptionTranslationFilter@5c887052, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@661fe025]
+13:38:45.668 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+13:38:45.719 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+13:38:45.736 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.242 seconds (JVM running for 8.075)
+13:38:59.901 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:38:59.901 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:38:59.903 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:50:36.800 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 31444 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:50:36.805 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:50:39.765 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:50:39.784 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:50:39.786 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:50:39.788 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:50:40.003 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:50:40.004 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3120 ms
+17:50:43.872 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7161457, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d119405, org.springframework.security.web.header.HeaderWriterFilter@64da6cbd, org.springframework.web.filter.CorsFilter@38ee7a9d, org.springframework.security.web.authentication.logout.LogoutFilter@3d9f5016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4087c7fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1290ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3610f277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@629984eb, org.springframework.security.web.session.SessionManagementFilter@47c7a9e5, org.springframework.security.web.access.ExceptionTranslationFilter@3fa21d49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4733f6f5]
+17:50:43.976 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:50:44.023 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:50:44.048 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 8.21 seconds (JVM running for 10.638)
+17:50:46.972 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:50:46.973 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:50:46.974 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:53:36.418 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 31672 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:53:36.423 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:53:38.925 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:53:38.939 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:53:38.941 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:53:38.942 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:53:39.097 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:53:39.097 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2576 ms
+17:53:43.110 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54b2fc58, org.springframework.security.web.context.SecurityContextPersistenceFilter@71a3e05c, org.springframework.security.web.header.HeaderWriterFilter@29050de5, org.springframework.web.filter.CorsFilter@daf22f0, org.springframework.security.web.authentication.logout.LogoutFilter@6f3f0ae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1934ad7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3850e90c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@318c68d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cbbb9c4, org.springframework.security.web.session.SessionManagementFilter@c689973, org.springframework.security.web.access.ExceptionTranslationFilter@580fd26b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f825516]
+17:53:43.239 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:53:43.277 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:53:43.295 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.67 seconds (JVM running for 9.738)
+17:53:43.984 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:53:43.985 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:53:43.989 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+17:54:31.626 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 26372 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:54:31.629 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:54:34.049 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:54:34.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:54:34.065 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:54:34.066 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:54:34.226 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:54:34.226 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2514 ms
+17:54:37.933 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55b5cd2b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c887052, org.springframework.security.web.header.HeaderWriterFilter@a6c54c3, org.springframework.web.filter.CorsFilter@40bb4f87, org.springframework.security.web.authentication.logout.LogoutFilter@4373f66f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a235b8e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62c72501, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4570d7b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51a651c1, org.springframework.security.web.session.SessionManagementFilter@78fe204a, org.springframework.security.web.access.ExceptionTranslationFilter@57e388c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@723877dd]
+17:54:38.071 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:54:38.106 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:54:38.126 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.257 seconds (JVM running for 9.285)
+17:54:38.303 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:54:38.304 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:54:38.305 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:56:18.199 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 27868 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:56:18.204 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:56:20.532 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:56:20.549 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:56:20.550 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:56:20.551 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:56:20.709 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:56:20.709 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2401 ms
+17:56:24.328 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@173f1614, org.springframework.security.web.context.SecurityContextPersistenceFilter@29050de5, org.springframework.security.web.header.HeaderWriterFilter@1290ed28, org.springframework.web.filter.CorsFilter@6c184d4d, org.springframework.security.web.authentication.logout.LogoutFilter@76bf1bb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@363c32cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d9f51b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d9f5016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7645f03e, org.springframework.security.web.session.SessionManagementFilter@5c887052, org.springframework.security.web.access.ExceptionTranslationFilter@2d0b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@535b1ae6]
+17:56:24.452 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:56:24.486 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:56:24.508 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.035 seconds (JVM running for 8.962)
+17:56:36.861 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:56:36.861 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:56:36.863 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+17:57:44.481 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 30116 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:57:44.484 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:57:46.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:57:46.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:57:46.974 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:57:46.974 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:57:47.120 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:57:47.121 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2538 ms
+17:57:51.279 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7161457, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d119405, org.springframework.security.web.header.HeaderWriterFilter@64da6cbd, org.springframework.web.filter.CorsFilter@38ee7a9d, org.springframework.security.web.authentication.logout.LogoutFilter@3d9f5016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4087c7fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1290ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3610f277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@629984eb, org.springframework.security.web.session.SessionManagementFilter@47c7a9e5, org.springframework.security.web.access.ExceptionTranslationFilter@3fa21d49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4733f6f5]
+17:57:51.397 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:57:51.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:57:51.442 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.692 seconds (JVM running for 9.743)
+17:57:51.587 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:57:51.588 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:57:51.590 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+17:59:08.999 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 16380 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+17:59:09.003 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+17:59:11.359 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:59:11.373 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:59:11.374 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:59:11.374 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+17:59:11.533 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:59:11.534 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2462 ms
+17:59:15.247 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d229b1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@65bb6275, org.springframework.security.web.header.HeaderWriterFilter@416d56f2, org.springframework.web.filter.CorsFilter@6f825516, org.springframework.security.web.authentication.logout.LogoutFilter@78d9f51b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72b6832e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b432e53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1290ed28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2da99821, org.springframework.security.web.session.SessionManagementFilter@1b01a0d, org.springframework.security.web.access.ExceptionTranslationFilter@3b83459e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d499c13]
+17:59:15.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:59:15.395 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:59:15.415 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.089 seconds (JVM running for 8.982)
+17:59:17.035 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:59:17.035 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:59:17.037 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:00:18.510 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 30724 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:00:18.515 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:00:20.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:00:20.781 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:00:20.782 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:00:20.783 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:00:20.929 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:00:20.929 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
+18:00:24.595 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@629984eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@20580d4e, org.springframework.security.web.header.HeaderWriterFilter@47c7a9e5, org.springframework.web.filter.CorsFilter@7b1e5e55, org.springframework.security.web.authentication.logout.LogoutFilter@3878be7b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cfa83f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c887052, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41fa769c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c1d59cd, org.springframework.security.web.session.SessionManagementFilter@4ed9f7b1, org.springframework.security.web.access.ExceptionTranslationFilter@6e31d989, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@438c9aa7]
+18:00:24.703 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:00:24.744 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:00:24.764 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.917 seconds (JVM running for 8.597)
+18:00:26.308 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:26.308 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:00:26.310 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:01:23.142 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 14632 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:01:23.148 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:01:25.502 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:01:25.515 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:01:25.516 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:01:25.516 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:01:25.661 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:01:25.661 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2428 ms
+18:01:29.124 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@297c9a9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b916808, org.springframework.security.web.header.HeaderWriterFilter@57e388c3, org.springframework.web.filter.CorsFilter@20999517, org.springframework.security.web.authentication.logout.LogoutFilter@4cfa83f9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63f855b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3610f277, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b148329, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ec63f8, org.springframework.security.web.session.SessionManagementFilter@21bd128b, org.springframework.security.web.access.ExceptionTranslationFilter@65bb6275, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71b6172c]
+18:01:29.228 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:01:29.252 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:01:29.272 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.785 seconds (JVM running for 8.483)
+18:10:52.397 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:10:52.397 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:10:52.400 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:12:25.281 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 28816 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:12:25.284 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:12:27.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:12:27.654 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:12:27.655 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:12:27.655 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:12:27.821 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:12:27.822 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2458 ms
+18:12:31.427 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fb56bea, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b83459e, org.springframework.security.web.header.HeaderWriterFilter@22bdb1d0, org.springframework.web.filter.CorsFilter@5e5beb8a, org.springframework.security.web.authentication.logout.LogoutFilter@4091b9c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41fa769c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5261ec9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed9f7b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f95881a, org.springframework.security.web.session.SessionManagementFilter@388623ad, org.springframework.security.web.access.ExceptionTranslationFilter@3135bf25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41ccb3b9]
+18:12:31.533 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:12:31.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:12:31.591 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.977 seconds (JVM running for 8.869)
+18:12:33.770 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:12:33.771 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:12:33.774 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:15:29.530 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 29536 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:15:29.533 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:15:31.788 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:15:31.804 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:15:31.805 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:15:31.806 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:15:31.949 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:15:31.950 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2344 ms
+18:15:35.494 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@661fe025, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fa21d49, org.springframework.security.web.header.HeaderWriterFilter@32118208, org.springframework.web.filter.CorsFilter@7161457, org.springframework.security.web.authentication.logout.LogoutFilter@62c72501, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23ed382c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ed9f7b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b432e53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38ee7a9d, org.springframework.security.web.session.SessionManagementFilter@1ddc6db2, org.springframework.security.web.access.ExceptionTranslationFilter@79f90a3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33188612]
+18:15:35.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:15:35.642 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:15:35.661 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.826 seconds (JVM running for 8.671)
+18:22:16.723 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:22:16.723 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:22:16.726 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+18:22:43.639 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 31016 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:22:43.644 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:22:45.914 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:22:45.927 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:22:45.928 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:22:45.929 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:22:46.069 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:22:46.069 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2341 ms
+18:22:49.589 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7161457, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d119405, org.springframework.security.web.header.HeaderWriterFilter@64da6cbd, org.springframework.web.filter.CorsFilter@38ee7a9d, org.springframework.security.web.authentication.logout.LogoutFilter@3d9f5016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4087c7fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1290ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3610f277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@629984eb, org.springframework.security.web.session.SessionManagementFilter@47c7a9e5, org.springframework.security.web.access.ExceptionTranslationFilter@3fa21d49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4733f6f5]
+18:22:49.699 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:22:49.740 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:22:49.759 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.788 seconds (JVM running for 8.483)
+18:23:01.187 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:23:01.187 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:23:01.189 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:24:20.469 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 28992 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:24:20.473 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:24:22.992 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:24:23.008 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:24:23.009 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:24:23.009 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:24:23.156 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:24:23.156 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2603 ms
+18:24:26.660 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b1e5e55, org.springframework.security.web.context.SecurityContextPersistenceFilter@21bd128b, org.springframework.security.web.header.HeaderWriterFilter@7951c3a2, org.springframework.web.filter.CorsFilter@4c1d59cd, org.springframework.security.web.authentication.logout.LogoutFilter@7df28f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@321ca237, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55fdf7f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40113163, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76cf841, org.springframework.security.web.session.SessionManagementFilter@2d119405, org.springframework.security.web.access.ExceptionTranslationFilter@1b01a0d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3453acd2]
+18:24:26.784 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:24:26.809 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:24:26.828 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.071 seconds (JVM running for 8.975)
+18:24:27.284 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:24:27.284 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:24:27.286 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:28:10.312 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 30364 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:28:10.317 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:28:12.987 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:28:13.001 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:28:13.003 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:28:13.003 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:28:13.165 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:28:13.165 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2732 ms
+18:28:17.388 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fb56bea, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b83459e, org.springframework.security.web.header.HeaderWriterFilter@22bdb1d0, org.springframework.web.filter.CorsFilter@5e5beb8a, org.springframework.security.web.authentication.logout.LogoutFilter@4091b9c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41fa769c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5261ec9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed9f7b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f95881a, org.springframework.security.web.session.SessionManagementFilter@388623ad, org.springframework.security.web.access.ExceptionTranslationFilter@3135bf25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41ccb3b9]
+18:28:17.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:28:17.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:28:17.595 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 8.076 seconds (JVM running for 10.267)
+18:28:17.675 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:28:17.676 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:28:17.677 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:30:47.308 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 25200 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:30:47.312 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:30:49.771 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:30:49.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:30:49.787 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:30:49.788 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:30:49.934 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:30:49.934 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2545 ms
+18:30:53.811 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@733ec58b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cd26422, org.springframework.security.web.header.HeaderWriterFilter@46e3559f, org.springframework.web.filter.CorsFilter@723877dd, org.springframework.security.web.authentication.logout.LogoutFilter@41fa769c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b148329, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47c7a9e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21bd128b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@415ef4d8, org.springframework.security.web.session.SessionManagementFilter@32118208, org.springframework.security.web.access.ExceptionTranslationFilter@45900b64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b2ccba5]
+18:30:53.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:30:53.967 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:30:53.986 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.574 seconds (JVM running for 9.56)
+18:30:54.364 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:30:54.364 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:30:54.366 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:33:13.850 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 19360 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:33:13.853 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:33:16.066 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:33:16.079 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:33:16.080 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:33:16.080 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:33:16.223 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:33:16.223 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2299 ms
+18:33:19.911 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@173f1614, org.springframework.security.web.context.SecurityContextPersistenceFilter@29050de5, org.springframework.security.web.header.HeaderWriterFilter@1290ed28, org.springframework.web.filter.CorsFilter@6c184d4d, org.springframework.security.web.authentication.logout.LogoutFilter@76bf1bb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@363c32cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d9f51b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d9f5016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7645f03e, org.springframework.security.web.session.SessionManagementFilter@5c887052, org.springframework.security.web.access.ExceptionTranslationFilter@2d0b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@535b1ae6]
+18:33:20.028 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:33:20.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:33:20.083 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.924 seconds (JVM running for 8.752)
+18:33:26.273 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:33:26.274 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:33:26.276 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:35:11.925 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 30292 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:35:11.929 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:35:14.410 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:35:14.426 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:35:14.428 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:35:14.428 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:35:14.585 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:35:14.585 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2570 ms
+18:35:18.565 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76cf841, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b432e53, org.springframework.security.web.header.HeaderWriterFilter@2d119405, org.springframework.web.filter.CorsFilter@297c9a9b, org.springframework.security.web.authentication.logout.LogoutFilter@318c68d5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ec22831, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29050de5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39c85c1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20999517, org.springframework.security.web.session.SessionManagementFilter@20580d4e, org.springframework.security.web.access.ExceptionTranslationFilter@5261ec9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56c8e6f0]
+18:35:18.686 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:35:18.737 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:35:18.755 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.682 seconds (JVM running for 10.176)
+18:35:18.996 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:35:18.997 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:35:18.998 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:35:41.227 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 23880 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+18:35:41.230 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+18:35:43.907 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:35:43.921 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:35:43.922 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:35:43.923 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+18:35:44.073 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:35:44.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2771 ms
+18:35:48.195 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bc7db89, org.springframework.security.web.context.SecurityContextPersistenceFilter@78fe204a, org.springframework.security.web.header.HeaderWriterFilter@4b432e53, org.springframework.web.filter.CorsFilter@479ac2cb, org.springframework.security.web.authentication.logout.LogoutFilter@63f855b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@399ca607, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71a3e05c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78d9f51b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@220c9a63, org.springframework.security.web.session.SessionManagementFilter@62f11ebb, org.springframework.security.web.access.ExceptionTranslationFilter@7951c3a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f95881a]
+18:35:48.310 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:35:48.337 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:35:48.364 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 7.864 seconds (JVM running for 10.027)
+18:35:57.809 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:35:57.809 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:35:57.811 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:11:13.621 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 29768 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+22:11:13.624 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+22:11:15.242 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:11:15.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:11:15.252 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:11:15.252 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+22:11:15.351 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:11:15.351 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1664 ms
+22:11:17.638 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41ccb3b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e224df5, org.springframework.security.web.header.HeaderWriterFilter@642a16aa, org.springframework.web.filter.CorsFilter@53d9826f, org.springframework.security.web.authentication.logout.LogoutFilter@416d56f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5261ec9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f438904, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59c04bee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e84f3c8, org.springframework.security.web.session.SessionManagementFilter@294aba23, org.springframework.security.web.access.ExceptionTranslationFilter@de81be1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ec22831]
+22:11:17.700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:11:17.720 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:11:17.731 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 4.671 seconds (JVM running for 5.871)
+22:11:47.475 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:11:47.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:11:47.477 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:12:24.877 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 22664 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+22:12:24.881 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+22:12:27.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:12:27.146 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:12:27.147 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:12:27.147 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+22:12:27.251 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:12:27.251 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2278 ms
+22:12:30.502 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7161457, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d119405, org.springframework.security.web.header.HeaderWriterFilter@64da6cbd, org.springframework.web.filter.CorsFilter@38ee7a9d, org.springframework.security.web.authentication.logout.LogoutFilter@3d9f5016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4087c7fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1290ed28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3610f277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@629984eb, org.springframework.security.web.session.SessionManagementFilter@47c7a9e5, org.springframework.security.web.access.ExceptionTranslationFilter@3fa21d49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4733f6f5]
+22:12:30.597 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:12:30.622 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:12:30.638 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.32 seconds (JVM running for 7.908)
+22:13:36.744 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 30292 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+22:13:36.748 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+22:13:38.856 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:13:38.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:13:38.868 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:13:38.868 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+22:13:38.994 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:13:38.995 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2178 ms
+22:13:41.759 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@173f1614, org.springframework.security.web.context.SecurityContextPersistenceFilter@29050de5, org.springframework.security.web.header.HeaderWriterFilter@1290ed28, org.springframework.web.filter.CorsFilter@6c184d4d, org.springframework.security.web.authentication.logout.LogoutFilter@76bf1bb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@363c32cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d9f51b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d9f5016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7645f03e, org.springframework.security.web.session.SessionManagementFilter@5c887052, org.springframework.security.web.access.ExceptionTranslationFilter@2d0b05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@535b1ae6]
+22:13:41.873 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:13:41.971 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:13:41.993 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 5.936 seconds (JVM running for 7.566)
+22:14:46.420 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:14:46.421 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:14:46.422 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:16:40.039 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 18852 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+22:16:40.044 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+22:16:41.971 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:16:41.985 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:16:41.986 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:16:41.986 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+22:16:42.096 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:16:42.096 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+22:16:44.804 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@479ac2cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1290ed28, org.springframework.security.web.header.HeaderWriterFilter@2b916808, org.springframework.web.filter.CorsFilter@220c9a63, org.springframework.security.web.authentication.logout.LogoutFilter@516592b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44114b9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c85c1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23ed382c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55b5cd2b, org.springframework.security.web.session.SessionManagementFilter@a6c54c3, org.springframework.security.web.access.ExceptionTranslationFilter@4ed9f7b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17b016ac]
+22:16:44.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:16:44.904 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:16:44.918 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 5.52 seconds (JVM running for 6.937)
+22:18:48.733 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:18:48.734 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:18:48.735 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22:23:42.217 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 28516 (D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\JavaCourse-IDEAJavaProject\S10\TripAdvisor)
+22:23:42.221 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+22:23:44.406 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:23:44.418 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:23:44.419 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:23:44.419 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+22:23:44.539 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:23:44.540 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2254 ms
+22:23:47.324 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33188612, org.springframework.security.web.context.SecurityContextPersistenceFilter@59c04bee, org.springframework.security.web.header.HeaderWriterFilter@4ed5a1b0, org.springframework.web.filter.CorsFilter@4733f6f5, org.springframework.security.web.authentication.logout.LogoutFilter@2b916808, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78fe204a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@414f87a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e31d989, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ccac6f4, org.springframework.security.web.session.SessionManagementFilter@3135bf25, org.springframework.security.web.access.ExceptionTranslationFilter@1d02af26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b27b210]
+22:23:47.456 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:23:47.507 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:23:47.526 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 5.954 seconds (JVM running for 7.641)
+22:24:04.262 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:24:04.262 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:24:04.263 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms

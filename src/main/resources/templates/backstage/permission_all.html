@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <title>Permission Index</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+    <div class="content-wrapper">
+
+        <section class="content-header">
+            <h1>
+                Permission
+                <small>Permission List</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a href="/backstage/permission/all">Permission</a></li>
+                <li class="active">Permission List</li>
+            </ol>
+        </section>
+
+        <section class="content">
+
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">List</h3>
+                </div>
+
+                <div class="box-body">
+
+                    <div class="table-box">
+
+                        <div class="pull-left">
+                            <div class="form-group form-inline">
+                                <div class="btn-group">
+
+                                    <a th:href="@{/backstage/permission_add}" sec:authorize="hasAnyAuthority('/permission/add')">
+                                        <button type="button" class="btn btn-default" title="New">
+                                            <i class="fa fa-file-o"></i> New
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                            <thead>
+                            <tr>
+                                <th class="" style="padding-right:0px;">
+                                    <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                                </th>
+                                <th >Permission Name</th>
+                                <th >Route</th>
+                                <th class="text-center">Operation</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr th:each="permission:${permissionPage.records}">
+                                <td><input name="ids" type="checkbox"></td>
+                                <td th:text="${permission.permissionName}"></td>
+                                <td th:text="${permission.permissionDesc}"></td>
+
+                                <td class="text-center">
+                                    <a th:href="@{/backstage/permission/edit(pid=${permission.pid})}" class="btn bg-olive btn-xs">Edit</a>
+                                    <a th:onclick="|javascript:del(${permission.pid})|" class="btn bg-olive btn-xs">Delete</a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    <div class="pull-left">
+                        <div class="form-group form-inline">
+                            Pages:<span th:text="${permissionPage.pages}"></span>
+                            Result:<span th:text="${permissionPage.total}"></span>
+                        </div>
+                    </div>
+
+                    <div class="box-tools pull-right">
+                        <ul class="pagination"></ul>
+                    </div>
+                </div>
+
+        </section>
+    </div>
+
+    <header th:replace="/backstage/common_footer::footer"></header>
+</div>
+
+<script th:inline="javascript">
+
+    function del(pid) {
+        if (confirm("Confirm your option")){
+            location.href="/backstage/permission/delete?pid="+pid
+        }
+    }
+
+    var currentPage = [[${permissionPage.current}]];
+    var pages = [[${permissionPage.pages}]];
+    $(".pagination").bootstrapPaginator({
+        bootstrapMajorVersion: 3,
+        currentPage: currentPage,
+        totalPages: pages,
+        numberOfPages: 5,
+        itemTexts: function (type, page, current) {
+            switch (type) {
+                case "first":
+                    return "First";
+                case "prev":
+                    return "Prev";
+                case "next":
+                    return "Next";
+                case "last":
+                    return "Last";
+                case "page":
+                    return page;
+            }
+        },
+        onPageClicked: function (event, originalEvent, type, page) {
+            location.href =  "/backstage/permission/all?page=" + page;
+        }
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Failed Sign in</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+
+
+        </span><a href="all-admin-index.html"><b> </b> <br><br> </span>
+
+
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">  </p>
+
+        <form action="all-admin-index.html" method="get">
+            <h2>Incorrect username or password</h2><br>
+            <h5><a href="/backstage/user_login">Sign in again</a></h5>
+        </form>
+
+
+        <!-- /.social-auth-links -->
+
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+
+
+<script>
+    $(function() {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
+</body>
+
+
+</html>

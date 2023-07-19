@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Details</title>
+
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/route-detail.css">
+    <script src="/frontdesk/js/jquery-3.3.1.js"></script>
+    <script src="/frontdesk/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .titlee{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .c_box{
+            width: 1188px;
+            height: 140px;
+            border-radius: 25px;
+            background-color: #efefef;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            position: relative;
+            flex-direction: row;
+        }
+        .c_box p {
+            position: relative;
+            top: -50px;
+            white-space: pre-wrap;
+        }
+
+        .c_box_a{
+            width: 0px;
+            height: 0px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        .c_box_a img{
+            background-color: gainsboro;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            top: -70px;
+        }
+        .c_box_np{
+            position: relative;
+            top: -80px;
+
+        }
+        .c_box_username{
+            width: 300px;
+            height: 20px;
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .c_box_date{
+            position: relative;
+            top: -6px;
+            font-size: 12px;
+        }
+        .c_box_p{
+            position: relative;
+            margin-top: 30px;
+            left: 100px;
+            width: 1088px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header th:replace="~{/frontdesk/header::header}"></header>
+
+<div class="wrap">
+    <div class="prosum_box">
+        <div class="prosum_left">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img style="border-radius: 20px" th:src="${product.PImage}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prosum_right">
+            <div class="info">
+                <p class="hotline"><span class="titlee" th:text="${product.productName}"></span></p>
+                <div class="opera">
+                    <a th:href="@{/frontdesk/favorite/add(pid=${product.pid})}" th:if="!${favorite}">
+                        <button class="btn btn-danger">
+                            <i style="vertical-align:middle;margin-right:5px" class="glyphicon glyphicon-heart-empty"></i>Favorite
+                        </button>
+                    </a>
+                    <a th:href="@{/frontdesk/favorite/del(pid=${product.pid})}" th:if="${favorite}">
+                        <button class="btn already">
+                            <i style="vertical-align:middle;margin-right:5px" class="glyphicon glyphicon-heart-empty"></i>Cancel Favorite
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="you_need_konw">
+        <div class="notice" th:utext="${product.productDesc}" style="border-radius: 25px"></div>
+    </div>
+
+    <span th:if="${session.member!=null}">
+        <div class="comment-section">
+        <h2 style="font-size: 25px"><b>Say something</b></h2>
+        <form th:action="@{/frontdesk/comments/add}" method="post">
+            <input type="hidden" name="pid" th:value="${product.pid}">
+            <input type="hidden" name="username" th:value="${session.member.username}">
+            <textarea name="commentText" rows="5" style="width: 1188px;border-radius: 5px" required></textarea>
+            <div class="col-md-12 data text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    </span>
+
+    <div>
+        <h2 style="font-size: 25px"><b>Comments</b></h2>
+
+        <ul>
+            <li th:each="comment : ${comments}">
+                <div class="c_box">
+                    <div class="c_box_a">
+                        <img th:src="${comment.avatar}"/>
+                    </div>
+                    <div class="c_box_np">
+                        <span class="c_box_username" th:text="${comment.username}"></span>
+                        <span class="c_box_date" th:text="${comment.createdAt}"></span>
+                        <p class="c_box_p" th:text="${comment.commentText}"></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+<footer th:replace="~{/frontdesk/footer::footer}"></footer>
+
+
+</body>
+
+</html>

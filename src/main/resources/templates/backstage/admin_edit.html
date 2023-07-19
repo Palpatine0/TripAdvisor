@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Admin Edit</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+    <div class="wrapper">
+        <header th:replace="~{/backstage/common_header::header}"></header>
+        <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+        <div class="content-wrapper">
+
+            <!-- 内容头部 -->
+            <section class="content-header">
+                <h1>
+                    Admin
+                    <small>Admin Edit</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li><a href="/backstage/admin/all">Admin</a></li>
+                    <li><a href="/backstage/admin/all">Admin List</a></li>
+                    <li class="active">Admin Edit</li>
+                </ol>
+            </section>
+            <!-- 内容头部 /-->
+
+            <!-- 正文区域 -->
+            <section class="content">
+
+                <form th:action="@{/backstage/admin/update}" method="post">
+                    <input type="hidden" th:value="${admin.aid}" name="aid">
+                    <div class="row data-type">
+
+                        <div class="col-md-2 title">Admin name</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${admin.username}" class="form-control" placeholder="Admin name" name="username">
+                        </div>
+
+                        <div class="col-md-2 title">Password</div>
+                        <div class="col-md-4 data">
+                            <input type="password" th:value="${admin.password}" class="form-control" placeholder="Password" name="password">
+                        </div>
+
+                        <div class="col-md-2 title">Email</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${admin.email}" class="form-control" placeholder="Email" name="email">
+                        </div>
+
+                        <div class="col-md-2 title">Tel</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${admin.phoneNum}" class="form-control" placeholder="Tel" name="phoneNum">
+                        </div>
+
+                        <div class="col-md-2 title">Status</div>
+                        <div class="col-md-4 data">
+                            <select class="form-control" name="status">
+                                <option value="true">Turn on</option>
+                                <option value="false">Turn off</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 title"></div>
+                    <div class="col-md-10 data text-center">
+                        <button type="submit" class="btn bg-maroon">Save</button>
+                        <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+                    </div>
+                </form>
+
+            </section>
+            <!-- 正文区域 /-->
+        </div>
+
+        <header th:replace="/backstage/common_footer::footer"></header>
+    </div>
+
+
+</body>
+</html>

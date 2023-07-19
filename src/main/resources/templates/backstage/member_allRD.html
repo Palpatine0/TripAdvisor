@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <title>User Index:Rank D</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+    <div class="content-wrapper">
+
+        <section class="content-header">
+            <h1>
+                Users
+                <small>User List</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a href="/backstage/member/all">User</a></li>
+                <li class="active">User List</li>
+            </ol>
+        </section>
+
+        <section class="content">
+
+            <!-- .box-body -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">List</h3>
+                </div>
+
+                <div class="box-body">
+
+                    <div class="table-box">
+
+
+                        <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                            <thead>
+                            <tr>
+                                <th class="" style="padding-right:0px;">
+                                    <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                                </th>
+                                <th >User Name</th>
+                                <th >Tel</th>
+                                <th >Email</th>
+                                <th >Rank</th>
+                                <th class="text-center" sec:authorize="hasAnyAuthority('/memberB/edit')">Operation</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr th:each="member:${memberPage.records}"
+                                    th:if="${member.score >= 200&&member.score <= 299}">
+                                    <td><input name="ids" type="checkbox"></td>
+                                    <td th:text="${member.username}"></td>
+                                    <td th:text="${member.phoneNum}"></td>
+                                    <td th:text="${member.email}"></td>
+                                    <td th:text="'D['+${member.score}+']'"></td>
+                                    <td class="text-center">
+                                        <a th:href="@{/backstage/memberB/edit(mid=${member.mid})}"
+                                           class="btn bg-olive btn-xs" sec:authorize="hasAnyAuthority('/memberB/edit')">Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+
+
+
+        </section>
+        <!-- 正文区域 /-->
+    </div>
+
+    <header th:replace="/backstage/common_footer::footer"></header>
+</div>
+
+<script th:inline="javascript">
+    var currentPage = [[${memberPage.current}]];
+    var pages = [[${memberPage.pages}]];
+    $(".pagination").bootstrapPaginator({
+        bootstrapMajorVersion: 3,
+        currentPage: currentPage,
+        totalPages: pages,
+        numberOfPages: 5,
+        itemTexts: function (type, page, current) {
+            switch (type) {
+                case "first":
+                    return "First";
+                case "prev":
+                    return "Prev";
+                case "next":
+                    return "Next";
+                case "last":
+                    return "Last";
+                case "page":
+                    return page;
+            }
+        },
+        onPageClicked: function (event, originalEvent, type, page) {
+            location.href =  "/backstage/member/all?page=" + page;
+        }
+    })
+</script>
+
+</body>
+</html>

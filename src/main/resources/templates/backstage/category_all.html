@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <title>Category Index</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+    <div class="content-wrapper">
+
+        <!-- 内容头部 -->
+        <section class="content-header">
+            <h1>
+                Category
+                <small>Category List</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a href="/backstage/category/all">Category</a></li>
+                <li class="active">Category List</li>
+            </ol>
+        </section>
+        <!-- 内容头部 /-->
+
+        <!-- 正文区域 -->
+        <section class="content">
+
+            <!-- .box-body -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">List</h3>
+                </div>
+
+                <div class="box-body">
+
+                    <!-- 数据表格 -->
+                    <div class="table-box">
+
+                        <!--工具栏-->
+                        <div class="pull-left">
+                            <div class="form-group form-inline">
+                                <div class="btn-group">
+
+                                    <a th:href="@{/backstage/category_add}" >
+                                        <button type="button" class="btn btn-default" title="New">
+                                            <i class="fa fa-file-o"></i> New
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--工具栏/-->
+
+                        <!--数据列表-->
+                        <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+                            <thead>
+                            <tr>
+                                <th class="" style="padding-right:0px;">
+                                    <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                                </th>
+                                <th >Category Name</th> 
+                                <th class="text-center">Operation</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr th:each="category:${categoryPage.records}">
+                                <td><input name="ids" type="checkbox"></td>
+                                <td th:text="${category.cname}"></td>
+
+                                <td class="text-center">
+                                    <a th:href="@{/backstage/category/edit(cid=${category.cid})}" class="btn bg-olive btn-xs">Edit</a>
+                                    <a th:onclick="|javascript:del(${category.cid})|" class="btn bg-olive btn-xs">Delete</a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+                        <!--数据列表/-->
+                    </div>
+                    <!-- 数据表格 /-->
+                </div>
+                <!-- /.box-body -->
+
+                <!-- .box-footer-->
+                <div class="box-footer">
+                    <div class="pull-left">
+                        <div class="form-group form-inline">
+                            Pages:<span th:text="${categoryPage.pages}"></span>
+                            Result:<span th:text="${categoryPage.total}"></span>
+                        </div>
+                    </div>
+
+                    <div class="box-tools pull-right">
+                        <ul class="pagination"></ul>
+                    </div>
+                </div>
+                <!-- /.box-footer-->
+
+        </section>
+        <!-- 正文区域 /-->
+    </div>
+
+    <header th:replace="/backstage/common_footer::footer"></header>
+</div>
+
+<script th:inline="javascript">
+
+    function del(cid) {
+        if (confirm("Confirm your option")){
+            location.href="/backstage/category/delete?cid="+cid
+        }
+    }
+
+    var currentPage = [[${categoryPage.current}]];
+    var pages = [[${categoryPage.pages}]];
+    $(".pagination").bootstrapPaginator({
+        bootstrapMajorVersion: 3,
+        currentPage: currentPage,
+        totalPages: pages,
+        numberOfPages: 5,
+        itemTexts: function (type, page, current) {
+            switch (type) {
+                case "first":
+                    return "First";
+                case "prev":
+                    return "Prev";
+                case "next":
+                    return "Next";
+                case "last":
+                    return "Last";
+                case "page":
+                    return page;
+            }
+        },
+        onPageClicked: function (event, originalEvent, type, page) { // 点击页码执行的方法
+            location.href =  "/backstage/category/all?page=" + page;
+        }
+    })
+</script>
+
+</body>
+</html>

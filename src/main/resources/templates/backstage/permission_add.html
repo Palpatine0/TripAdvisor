@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Permission Insert</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+<body class="hold-transition skin-purple sidebar-mini">
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+
+    <div class="content-wrapper">
+
+        <section class="content-header">
+            <h1>
+                Permission
+                <small>Permission Insert</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a th:href="@{/backstage/index}"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a th:href="@{/backstage/permission/all}">Permission</a></li>
+                <li><a th:href="@{/backstage/permission/all}">Permission List</a></li>
+                <li class="active">Permission Insert</li>
+            </ol>
+        </section>
+
+        <section class="content">
+            <form th:action="@{/backstage/permission/add}" method="post">
+                <div class="panel panel-default">
+                    <div class="row data-type">
+
+                        <div class="col-md-2 title">Permission Name</div>
+                        <div class="col-md-4 data">
+                            <input type="text" class="form-control" name="permissionName" placeholder="Permission name" value="">
+                        </div>
+                        <div class="col-md-2 title">Route</div>
+                        <div class="col-md-4 data">
+                            <input type="text" class="form-control" name="permissionDesc" placeholder="Route" value="">
+                        </div>
+                    </div>
+                    <div class="box-tools text-center">
+                        <button type="submit" class="btn bg-maroon">Save</button>
+                        <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer th:replace="~{/backstage/common_footer::footer}"></footer>
+</div>
+
+</body>
+</html>

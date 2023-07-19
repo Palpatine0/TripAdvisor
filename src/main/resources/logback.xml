@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+    <!--log file storage address-->
+    <property name="LOG_HOME" value="${catalina.base}/logs/"/>
+
+    <!--console-->
+    <appender name="Stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- log output code -->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <!--log output patten: %d-date, %thread-thread name, %-5level: -->
+            <pattern>%d{MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- daily generate patten -->
+    <appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--log output file name-->
+            <FileNamePattern>${LOG_HOME}/server.%d{yy99-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </layout>
+        <!--max size of log file-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!-- output level -->
+    <root level="info">
+        <appender-ref ref="Stdout"/>
+        <appender-ref ref="RollingFile"/>
+    </root>
+</configuration>

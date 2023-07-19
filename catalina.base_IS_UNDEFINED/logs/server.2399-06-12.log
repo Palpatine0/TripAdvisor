@@ -1,0 +1,32 @@
+10:05:12.225 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Starting TripAdvisorApplication using Java 1.8.0_131 on Alphabeta with PID 6656 (D:\TempProjects\TripAdvisor\target\classes started by EMPEROR PALPATINE in D:\TempProjects\TripAdvisor)
+10:05:12.231 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - No active profile set, falling back to default profiles: default
+10:05:14.781 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+10:05:14.802 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+10:05:14.804 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:05:14.804 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+10:05:14.956 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:05:14.956 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2575 ms
+10:05:18.186 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7eee96, org.springframework.security.web.context.SecurityContextPersistenceFilter@1de0641b, org.springframework.security.web.header.HeaderWriterFilter@4099209b, org.springframework.web.filter.CorsFilter@3a36cd5, org.springframework.security.web.authentication.logout.LogoutFilter@4c82b5df, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22dc59b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6411504a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea2412c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53f0d09c, org.springframework.security.web.session.SessionManagementFilter@1dad01fe, org.springframework.security.web.access.ExceptionTranslationFilter@1378eea2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@609319c3]
+10:05:18.278 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+10:05:18.340 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path ''
+10:05:18.354 [main] INFO  com.example.tripadvisor.TripAdvisorApplication - Started TripAdvisorApplication in 6.963 seconds (JVM running for 10.666)
+10:07:38.489 [http-nio-9999-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:07:38.489 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:07:38.491 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:07:44.116 [http-nio-9999-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:07:44.547 [http-nio-9999-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:07:48.505 [http-nio-9999-exec-1] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/all, visitTime=Mon Jun 12 10:07:48 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=85, exceptionMessage=null)
+10:07:53.777 [http-nio-9999-exec-10] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/edit, visitTime=Mon Jun 12 10:07:53 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=25, exceptionMessage=null)
+10:07:58.542 [http-nio-9999-exec-1] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/all, visitTime=Mon Jun 12 10:07:58 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=19, exceptionMessage=null)
+10:08:02.076 [http-nio-9999-exec-8] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/edit, visitTime=Mon Jun 12 10:08:02 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+10:08:04.892 [http-nio-9999-exec-2] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/all, visitTime=Mon Jun 12 10:08:04 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=13, exceptionMessage=null)
+10:08:07.537 [http-nio-9999-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/edit, visitTime=Mon Jun 12 10:08:07 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=16, exceptionMessage=null)
+10:08:10.296 [http-nio-9999-exec-4] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/all, visitTime=Mon Jun 12 10:08:10 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=10, exceptionMessage=null)
+10:08:13.502 [http-nio-9999-exec-8] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/product/edit, visitTime=Mon Jun 12 10:08:13 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=12, exceptionMessage=null)
+10:28:59.107 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m14s123ms722?s100ns).
+13:43:53.337 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m13s302ms845?s).
+15:03:20.051 [http-nio-9999-exec-7] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/admin/all, visitTime=Mon Jun 12 15:03:19 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=75, exceptionMessage=null)
+15:03:21.946 [http-nio-9999-exec-3] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/role/all, visitTime=Mon Jun 12 15:03:21 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=41, exceptionMessage=null)
+15:03:23.056 [http-nio-9999-exec-10] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/admin/all, visitTime=Mon Jun 12 15:03:23 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=17, exceptionMessage=null)
+15:03:24.471 [http-nio-9999-exec-1] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/admin/desc, visitTime=Mon Jun 12 15:03:24 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=22, exceptionMessage=null)
+15:22:26.643 [http-nio-9999-exec-8] INFO  com.example.tripadvisor.aop.LogAOP - Log(url=/backstage/admin/desc, visitTime=Mon Jun 12 15:22:26 CST 2023, username=1, ip=0:0:0:0:0:0:0:1, executionTime=21, exceptionMessage=null)

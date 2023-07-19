@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Role Edit</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+    <div class="wrapper">
+        <header th:replace="~{/backstage/common_header::header}"></header>
+        <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+        <div class="content-wrapper">
+
+            <!-- 内容头部 -->
+            <section class="content-header">
+                <h1>
+                    Role
+                    <small>Role Edit</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li><a href="/backstage/role/all">Role</a></li>
+                    <li><a href="/backstage/role/all">Role List</a></li>
+                    <li class="active">Role Edit</li>
+                </ol>
+            </section>
+            <!-- 内容头部 /-->
+
+            <!-- 正文区域 -->
+            <section class="content">
+
+                <form th:action="@{/backstage/role/update}" method="post">
+                    <input type="hidden" th:value="${role.rid}" name="rid">
+                    <div class="row data-type">
+
+                        <div class="col-md-2 title">Role name</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${role.roleName}" class="form-control" placeholder="text" name="roleName">
+                        </div>
+
+                        <div class="col-md-2 title">Description</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${role.roleDesc}" class="form-control" placeholder="text" name="roleDesc">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 title"></div>
+                    <div class="col-md-10 data text-center">
+                        <button type="submit" class="btn bg-maroon">Save</button>
+                        <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+                    </div>
+                </form>
+
+            </section>
+            <!-- 正文区域 /-->
+        </div>
+
+        <header th:replace="/backstage/common_footer::footer"></header>
+    </div>
+
+
+</body>
+</html>

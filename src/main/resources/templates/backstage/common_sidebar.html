@@ -1,0 +1,161 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<!-- sidebar -->
+<aside class="main-sidebar" th:fragment="sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="/backstage/img/TTT.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p th:text="${#authentication.name}"></p>
+                <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+            </div>
+        </div>
+
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">Menu</li>
+
+            <!--HOME-->
+            <li id="admin-index">
+                <a href="/backstage/index">
+                    <i class="fa fa-dashboard"></i>
+                    <b><span>Home</span></b>
+                </a>
+            </li>
+
+
+
+            <li class="treeview" id="transaction">
+
+                <a href="#">
+                    <i class="fa fa-laptop"></i>
+                    <span>Post</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+
+
+                    <li id="product">
+                        <a href="/backstage/product/all">
+                            <i class="fa fa-circle-o"></i>Posts
+                        </a>
+                    </li>
+
+                    <li id="category">
+                        <a href="/backstage/category/all">
+                            <i class="fa fa-circle-o"></i>Category
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <!-- Admin -->
+            <li class="treeview" id="admin">
+                <a href="#">
+                    <i class="fa fa-folder"></i>
+                    <span>Admin</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+                    <li id="auser">
+                        <a href="/backstage/admin/all" sec:authorize="hasAnyAuthority('/admin/all')">
+                            <i class="fa fa-circle-o"></i>Admin
+                        </a>
+                    </li>
+
+                    <li id="role">
+                        <a href="/backstage/role/all" sec:authorize="hasAnyAuthority('/role/all')">
+                            <i class="fa fa-circle-o"></i>Role
+                        </a>
+                    </li>
+
+                    <li id="permission">
+                        <a href="/backstage/permission/all" sec:authorize="hasAnyAuthority('/permission/all')">
+                            <i class="fa fa-circle-o"></i>Permission
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- User -->
+            <li class="treeview" id="userss">
+                <a href="#">
+                    <i class="fa fa-folder"></i>
+                    <span>User</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+
+                <ul class="treeview-menu">
+                    <li id="roleee">
+                        <a href="/backstage/memberB/RA" sec:authorize="hasAnyAuthority('/memberB/RA')">
+                            <i class="fa fa-circle-o"></i>Users: Rank A <!-- >500 -->
+                        </a>
+                    </li>
+                    <li id="member_allRB">
+                        <a href="/backstage/memberB/allRB" sec:authorize="hasAnyAuthority('/memberB/RB')">
+                            <i class="fa fa-circle-o"></i>Users: Rank B <!-- 400-499 -->
+                        </a>
+                    </li>
+                    <li id="member_allRC">
+                        <a href="/backstage/memberB/allRC" sec:authorize="hasAnyAuthority('/memberB/RC')">
+                            <i class="fa fa-circle-o"></i>Users: Rank C <!-- 400-499 -->
+                        </a>
+                    </li>
+                    <li id="member_allRD">
+                        <a href="/backstage/memberB/allRD" sec:authorize="hasAnyAuthority('/memberB/RD')">
+                            <i class="fa fa-circle-o"></i>Users: Rank D <!-- 200-299 -->
+                        </a>
+                    </li>
+                    <li id="member_allRE">
+                        <a href="/backstage/memberB/allRE" sec:authorize="hasAnyAuthority('/memberB/RE')">
+                            <i class="fa fa-circle-o"></i>Users: Rank E <!-- 100-199 -->
+                        </a>
+                    </li>
+                    <li id="member_allRF">
+                        <a href="/backstage/memberB/allRF" sec:authorize="hasAnyAuthority('/memberB/RF')">
+                            <i class="fa fa-circle-o"></i>Users: Rank F <!-- 0-99 -->
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </section>
+
+    <script>
+        $(function () {
+            //record id when outer menu being selected
+            $(".treeview").click(function () {
+                sessionStorage.menu = $(this).attr("id");
+            })
+            //inner
+            $(".treeview li").click(function () {
+                sessionStorage.menus = $(this).attr("id");
+            })
+
+            //add class attr for clicked outer menu, hold the sidebar open
+            $("#"+sessionStorage.menu).addClass("active")
+            //add css for clicked outer menu, enlighten the words
+            $("#"+sessionStorage.menus+" a").css("color","white")
+        })
+    </script>
+</aside>
+<!-- sidebar /-->

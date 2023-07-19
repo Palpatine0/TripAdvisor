@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorites</title>
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+    <link rel="stylesheet" href="/frontdesk/css/faviorite.css">
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/route-detail.css">
+    <script src="/frontdesk/js/jquery-3.3.1.js"></script>
+    <script src="/frontdesk/js/bootstrap-paginator.js"></script>
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+    <header th:replace="~{/frontdesk/header::header}"></header>
+
+    <div class="page_one">
+        <div class="contant">
+            <p class="pros_title" th:text="Favorites"></p>
+            <div class="left">
+                <ul>
+                    <li th:each="product:${productPage.records}">
+                        <img th:src="${product.pImage}" alt="" width="320">
+                        <div class="content">
+                            <p class="title" th:text="${product.productName}"></p>
+                            <div>
+                                <p class="details">
+                                    <a th:href="@{/frontdesk/product/routeDetails(pid=${product.pid})}">Details</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pageNum">
+                    <ul class="pagination"></ul>
+                </div>
+                <script th:inline="javascript">
+                    var currentPage = [[${productPage.current}]];
+                    var pages = [[${productPage.pages}]];
+                    var cid = '[[${cid}]]';
+                    var productName = '[[${productName}]]';
+                    $(".pagination").bootstrapPaginator({
+                        bootstrapMajorVersion: 3,
+                        currentPage: currentPage,
+                        totalPages: pages,
+                        numberOfPages: 15,
+                        itemTexts: function (type, page, current) {
+                            switch (type) {
+                                case "first":
+                                    return "First";
+                                case "prev":
+                                    return "Prev";
+                                case "next":
+                                    return "Next";
+                                case "last":
+                                    return "Last";
+                                case "page":
+                                    return page;
+                            }
+                        },
+                        onPageClicked: function (event, originalEvent, type, page) {
+                            location.href =  "/frontdesk/favorite/myFavorite?cid=" + cid +
+                                "&page=" + page +
+                                "&productName="+productName;
+                        }
+                    })
+                </script>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    </div>
+
+    <footer th:replace="~{/frontdesk/footer::footer}"></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User Edit</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+    <div class="wrapper">
+        <header th:replace="~{/backstage/common_header::header}"></header>
+        <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+        <div class="content-wrapper">
+
+
+            <section class="content-header">
+                <h1>
+                    User
+                    <small>User Edit</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li><a href="/backstage/role/all">User</a></li>
+                    <li><a href="/backstage/role/all">User List</a></li>
+                    <li class="active">User Edit</li>
+                </ol>
+            </section>
+
+
+            <section class="content">
+
+                <form th:action="@{/backstage/memberB/update}" method="post">
+                    <input type="hidden" th:value="${member.mid}" name="mid">
+                    <div class="row data-type">
+
+                        <div class="col-md-2 title">User name</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${member.username}" class="form-control" placeholder="text" name="username">
+                        </div>
+
+                        <div class="col-md-2 title">Score</div>
+                        <div class="col-md-4 data">
+                            <input type="text" th:value="${member.score}" class="form-control" placeholder="text" name="score">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 title"></div>
+                    <div class="col-md-10 data text-center">
+                        <button type="submit" class="btn bg-maroon">Save</button>
+                        <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+                    </div>
+                </form>
+
+            </section>
+            <!-- ÕýÎÄÇøÓò /-->
+        </div>
+
+        <header th:replace="/backstage/common_footer::footer"></header>
+    </div>
+
+
+</body>
+</html>

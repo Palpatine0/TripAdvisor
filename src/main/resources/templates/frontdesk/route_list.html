@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Projects</title>
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+    <link rel="stylesheet" href="/frontdesk/css/search.css">
+    <script src="/frontdesk/js/jquery-3.3.1.js"></script>
+    <script src="/frontdesk/js/bootstrap-paginator.js"></script>
+    <script src="static/frontdesk/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<header th:replace="~{/frontdesk/header::header}"></header>
+
+<div class="page_one">
+    <div class="contant">
+
+        <div class="left">
+
+            <ul>
+
+                <li th:each="product:${productPage.records}">
+                    <img th:src="${product.PImage}" width="320">
+                    <div class="content">
+                        <p class="title" th:text="${product.productName}"></p>
+                        <div>
+                            <p class="details">
+                                <a th:href="@{/frontdesk/product/routeDetails(pid=${product.pid})}">Details</a>
+                            </p>
+                        </div>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="pageNum">
+                <ul class="pagination"></ul>
+            </div>
+            <script th:inline="javascript">
+                var currentPage = [[${productPage.current}]];
+                var pages = [[${productPage.pages}]];
+                var cid = '[[${cid}]]';
+                var productName = '[[${productName}]]';
+                $(".pagination").bootstrapPaginator({
+                    bootstrapMajorVersion: 3,
+                    currentPage: currentPage,
+                    totalPages: pages,
+                    numberOfPages: 15,
+                    itemTexts: function (type, page, current) {
+                        switch (type) {
+                            case "first":
+                                return "First";
+                            case "prev":
+                                return "Prev";
+                            case "next":
+                                return "Next";
+                            case "last":
+                                return "Last";
+                            case "page":
+                                return page;
+                        }
+                    },
+                    onPageClicked: function (event, originalEvent, type, page) {
+                        location.href =  "/frontdesk/product/routeList?cid=" + cid +
+                            "&page=" + page +
+                            "&productName="+productName;
+                    }
+                })
+            </script>
+
+        </div>
+
+        <!--X-->
+        <div class="right">
+            <ul class="tops_list">
+                <li class="header">Where to go, right now</li>
+                <li class="item">
+
+
+                    <span class="badge">1</span>
+                    <img src="/frontdesk/images/top1.jpg" width="80px" height="80px"/>
+                    <div class="contents">
+                        <span>Riviera Maya</span>
+                        <p>
+                            <span class="price">$6980</span>
+                            |
+                            <span class="score">5.0</span>
+                        </p>
+                    </div>
+
+                </li>
+                <li class="item">
+                    <span class="badge" style="background:#FF8B26">2</span>
+                    <img src="/frontdesk/images/top2.jpg" width="80px" height="80px"/>
+                    <div class="content">
+                        <span>Reykjavik</span><br/>
+                        <span class="price">$3280</span>
+                        |
+                        <span class="score">5.0</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="badge" style="background:#FFB63E">3</span>
+                    <img src="/frontdesk/images/top3.jpg" width="80px" height="80px"/>
+                    <div class="content">
+                        <span>Sydney</span><br/>
+                        <span class="price">$1817</span>
+                        |
+                        <span class="score">5.0</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="badge" style="background:#99AECA ;">4</span>
+                    <img src="/frontdesk/images/top4.jpg" width="80px" height="80px"/>
+                    <div class="content">
+                        <span>Grand Canyon National Park</span><br/>
+                        <span class="price">$2780</span>
+                        |
+                        <span class="score">5.0</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="badge" style="background:#99AECA ;">5</span>
+                    <img src="/frontdesk/images/top5.jpg" width="80px" height="80px"/>
+                    <div class="content">
+                        <span>Yellowstone National Park, WY</span><br/>
+                        <span class="price">$7780</span>
+                        |
+                        <span class="score">5.0</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+<footer th:replace="~{/frontdesk/footer::footer}"></footer>
+
+</body>
+
+</html>

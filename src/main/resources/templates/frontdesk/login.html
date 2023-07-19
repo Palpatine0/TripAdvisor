@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/frontdesk/css/login.css">
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+	<script src="/frontdesk/js/angular.min.js"></script>
+	<script src="/frontdesk/js/jquery-3.3.1.js"></script>
+
+	<script src="/frontdesk/js/jquery-1.11.0.min.js"></script>
+	<script src="/frontdesk/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- 头部 end -->
+	<section id="login_wrap">
+		<div class="simple_header">
+			<div class="logo">
+				<img src="/frontdesk/images/logo.png" alt="">
+			</div>
+			<a class="link" href="/frontdesk/index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+		</div>
+		<div class="fullscreen-bg" style="background: url(/frontdesk/images/login_bg2.jpeg);height: 741px;">
+
+		</div>
+		<div class="login-box">
+			<div class="title">
+				<span>Sign In</span>
+			</div>
+			<div class="login_inner">
+
+
+
+				<form id="loginForm" th:action="@{/frontdesk/member/login}" method="post" accept-charset="utf-8">
+
+					<div class="input-group">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</div>
+						<input class="form-control" name="username" type="text" placeholder="name,email,phone" autocomplete="off">
+					</div>
+					<div class="input-group">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-lock"></span>
+						</div>
+						<input class="form-control" name="password" type="text" placeholder="password" autocomplete="off">
+					</div>
+
+					<span th:text="${message}" style="color: red"></span>
+
+					<div class="option">
+						<div class="register">
+							<a href="register.html" >Sign Up</a>
+						</div>
+					</div>
+					<button type="submit" class="btn">Sign In</button>
+
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<footer th:replace="~{/frontdesk/footer::footer}"></footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/route-detail.css">
+    <script src="/frontdesk/js/jquery-3.3.1.js"></script>
+    <script src="/frontdesk/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <style type="text/css">
+        * {
+            font-family: 微软雅黑;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .info {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .a img{
+            background-color: gainsboro;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+<header th:replace="~{/frontdesk/header::header}"></header>
+
+<div class="wrap">
+    <p class="pros_title" th:text="Profile"></p>
+
+    <div class="content">
+
+
+        <span class="title info">Avatar</span>
+        <div class="a">
+            <img th:src="${session.member.avatar}" />
+        </div>
+        <span class="title info"></span>
+        <span class="title info">Name</span>
+        <span th:text="${session.member.username}"></span>
+
+        <span class="title info">Email</span>
+        <span th:text="${session.member.email}"></span>
+
+        <span class="title info">Tel</span>
+        <span th:text="${session.member.phoneNum}"></span>
+
+
+
+        <div class="text-center">
+            <a type="submit" class="btn bg-maroon" th:href="@{/frontdesk/member/edit(mid=${session.member.mid})}">Edit</a>
+            <a  class="btn bg-maroon collection" href="/frontdesk/favorite/myFavorite">Favorite</a>
+            <br>
+            <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+<footer th:replace="~{/frontdesk/footer::footer}"></footer>
+</body>
+</html>

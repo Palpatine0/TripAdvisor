@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Post Edit</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .titlee{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .c_box{
+            /*width: 1400px;*/
+            width: 99%;
+            height: 140px;
+            border-radius: 25px;
+            background-color: #efefef;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            position: relative;
+            flex-direction: row;
+        }
+        .c_box p {
+            position: relative;
+            top: -50px;
+            white-space: pre-wrap;
+        }
+
+        .c_box_a{
+            width: 0px;
+            height: 0px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        .c_box_a img{
+            background-color: gainsboro;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            top: -70px;
+        }
+        .c_box_np{
+            position: relative;
+            top: -80px;
+
+        }
+        .nd{
+            position: relative;
+            top: -70px;
+            left: -40px;
+        }
+        .c_box_username{
+            width: 300px;
+            height: 20px;
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .c_box_date{
+            position: relative;
+            top: -6px;
+            font-size: 12px;
+        }
+        .c_box_p{
+            position: relative;
+            margin-top: -140px;
+            left: 110px;
+            width: 1088px;
+        }
+        .cDB{
+            position: absolute;
+            top: 20px;
+            left: 1150px;
+            float: right
+        }
+    </style>
+
+
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+    <div class="content-wrapper">
+
+        <section class="content-header">
+            <h1>
+                Post
+                <small>Post Edit</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a href="/backstage/product/all">Post</a></li>
+                <li><a href="/backstage/product/all">Post List</a></li>
+                <li class="active">Post Edit</li>
+            </ol>
+        </section>
+
+        <section class="content">
+            <div class="row data-type">
+
+
+                <div class="col-md-2 title" style="height: 160px">Image</div>
+                <div class="col-md-7 data" style="height: 160px">
+                    <form id="uploadImage" enctype="multipart/form-data">
+                        <input type="file" class="form-control" name="file" id="pImageFile" style="height: 155px" hidden>
+                    </form>
+                </div>
+
+                <div class="col-md-2 data" style="height: 160px;width:290px">
+                    <img height="155" width="290" th:src="${product.PImage}" id="pImage">
+                </div>
+
+                <!--from-->
+                <form th:action="@{/backstage/product/update}" method="post">
+
+                    <input type="hidden" th:value="${product.pImage}" name="pImage" id="hiddenPImage">
+
+                    <input type="hidden" name="pid" th:value="${product.pid}">
+                    <div class="col-md-2 title">Name</div>
+                    <div class="col-md-4 data">
+                        <input type="text" class="form-control" th:value="${product.productName}" name="productName">
+                    </div>
+
+                    <div class="col-md-2 title">Category</div>
+                    <div class="col-md-4 data">
+                        <select class="form-control" name="cid" >
+                            <option th:each="category:${categoryList}"
+                                    th:value="${category.cid}"
+                                    th:text="${category.cname}"
+                                    th:selected="${category.cid eq product.cid}">
+                            </option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-md-2 title">Status</div>
+                    <div class="col-md-10 data">
+                        <select class="form-control" name="status">
+                            <option value="true">Turn on</option>
+                            <option value="false">Turn off</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-md-2 title" style="height: 350px">Description</div>
+                    <div class="col-md-10 data" style="height: 350px">
+                        <div id="divW" th:utext="${product.productDesc}"></div>
+                        <textarea id="text1" name="productDesc" style="width:100%; height:200px;" hidden></textarea>
+
+                        <script>
+                            var E = window.wangEditor
+                            var editor = new E('#divW')
+                            var $text1 = $('#text1')
+                            editor.customConfig.onchange = function (html) {
+                                $text1.val(html)
+                            }
+                            editor.customConfig.menus = [
+                                'head',
+                                'bold',
+                                'fontSize',
+                                'fontName',
+                                'italic',
+                                'underline',
+                                'foreColor',
+                                'backColor',
+                                'justify',
+                                'image',
+                                'undo',
+                            ]
+                            editor.customConfig.uploadImgServer = '/backstage/product/upload';
+                            editor.customConfig.uploadFileName = 'file';
+                            editor.create()
+                            $text1.val(editor.txt.html())
+                        </script>
+                    </div>
+                    <div class="col-md-2 title"></div>
+
+                    <div class="col-md-10 data text-center">
+                        <button type="submit" class="btn bg-maroon">Save</button>
+                        <button type="button" class="btn bg-default" onclick="history.back(-1);">Return</button>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+        </section>
+
+        <span th:if="${comments!=null}">
+            <div style="margin-left: 40px">
+            <h2 style="font-size: 25px"><b>Comments</b></h2>
+
+            <ul>
+                <li th:each="comment : ${comments}">
+                    <div class="c_box">
+                        <div class="c_box_a">
+                            <img th:src="${comment.avatar}"/>
+                        </div>
+                        <div class="c_box_np">
+                            <div style="flex-direction: row">
+                                <div class="nd">
+                                    <span class="c_box_username" th:text="${comment.username}">NAME</span>
+                                    <span class="c_box_date" th:text="${comment.createdAt}">DATE</span>
+                                </div>
+                                <a th:onclick="|javascript:delC(${comment.cid})|" class="btn bg-maroon btn-xs cDB">Delete</a>
+                            </div>
+                            <p class="c_box_p" th:text="${comment.commentText}">COMMENT</p>
+                        </div>
+                    </div>`
+                </li>
+            </ul>
+
+        </div>
+        </span>
+
+    </div>
+
+    <header th:replace="/backstage/common_footer::footer"></header>
+
+    <script>
+
+        function delC(cid) {
+            if (confirm("Confirm your option")){
+                location.href="/frontdesk/comments/delete?cid="+cid
+            }
+        }
+
+        $(function () {
+            $("#pImageFile").change(function () {
+                var formData = new FormData();
+                formData.append("file", $(this)[0].files[0]);
+
+                $.ajax({
+
+                    url:"/backstage/product/upload",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (imageUrl) {
+
+                        $("#pImage").attr("src", imageUrl);
+
+                        $("#hiddenPImage").val(imageUrl);
+                    },
+
+                });
+            });
+        });
+
+
+    </script>
+</div>
+
+
+</body>
+</html>

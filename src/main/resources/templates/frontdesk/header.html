@@ -1,0 +1,245 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header class="header" th:fragment="header">
+
+	<style>
+		.header {
+			width: 100%
+		}
+
+
+		.header_top img {
+			width: 100%;
+			height: 100%
+		}
+
+		.shortcut {
+			height: 50px;
+			background-color: whitesmoke;
+			border-bottom: 1px solid #eee;
+			font-size: 14px;
+		}
+
+		.shortcut .box {
+			width: 1200px;
+			margin: 0 auto;
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.shortcut .box a {
+			color: #404040;
+			margin: 0 8px
+		}
+
+		.shortcut .box .right .glyphicon {
+			color: #aaa;
+			font-size: 14px;
+		}
+
+
+		.header_wrap {
+			padding: 10px 0;
+		}
+
+		.topbar {
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo img {
+			margin-right: 15px
+		}
+
+
+		.logo a {
+			display: inline-block;
+		}
+
+		.search {
+			display: flex;
+			border-radius: 10px;
+		}
+
+		.search_input {
+			float: left;
+			width: 400px;
+			height: 40px;
+			border: 2px solid var(--primary-color);
+			padding-left: 10px;
+		}
+
+		.search_input:focus {
+			outline: none;
+		}
+
+		.search-button {
+			float: left;
+			width: 90px;
+			height: 40px;
+			background: var(--primary-color);
+			text-align: center;
+			line-height: 40px;
+			color: #fff;
+			font-size: 18px;
+		}
+
+
+
+		.navitem {
+			width: 100%;
+			height: 40px;
+			background: var(--primary-color);
+		}
+
+		.nav {
+			width: 1200px;
+			margin: 20px auto 0;
+		}
+
+		.nav li {
+			float: left;
+			margin-left: 30px;
+		}
+
+		.nav li a {
+			color: #fff;
+			font-size: 14px;
+			display: inline-block;
+		}
+
+		.nav>li>a:focus,
+		.nav>li>a:hover {
+			background: none;
+		}
+
+		.nav .nav-active {
+			background-color: #00000047;
+		}
+
+		.nav>li>a {
+			padding: 10px 15px;
+		}
+		/*-*/
+		.AD-post{
+			font-family: Î¢ÈíÑÅºÚ;
+			border-radius: 15px;
+			background-color: red;
+			width: 130px;
+			height: 50px;
+		}
+		.AD-post-t {
+			color: #FFFFFF;
+			font-family: 'Î¢ÈíÑÅºÚ', sans-serif;
+			position: relative;
+			top: -3px;
+			left: 2px;
+			font-size: 40px;
+		}
+
+
+	</style>
+
+	<div class="shortcut">
+		<div class="box">
+
+			<!-- !logged -->
+			<div class="left">
+				<b>
+					<div th:if="${session.member}==null">
+						<a href="/frontdesk/login">Sign In</a>|<a href="/frontdesk/register">Sign Up</a>
+					</div>
+				</b>
+			</div>
+
+			<!-- logged -->
+			<div class="left">
+				<div th:if="${session.member}!=null">
+					<span>
+						<b>Welcome back! </b>
+						<span th:text="${session.member.username}"></span>
+					</span>
+					<span>
+						<b>&nbsp;Your Score: </b>
+						<span th:text="${session.member.score}"></span>
+					</span>
+					<span>
+						<b>&nbsp;Your Rank: </b>
+						<span th:text="${
+						session.member.score > 500 ? 'A' :
+						session.member.score > 400 ? 'B' :
+						session.member.score > 300 ? 'C' :
+						session.member.score > 200 ? 'D' :
+						session.member.score > 100 ? 'E' : 'F'}"></span>
+					</span>
+
+
+					<!--<a href="/frontdesk/favorite/myFavorite" class="collection">Favorite</a>-->
+					<a href="/frontdesk/profile/myProfile" class="collection"><b>Profile</b></a>
+					<a href="/frontdesk/member/logout">
+						<b>Sign Out</b>
+						<span class="glyphicon glyphicon-log-out"></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="header_wrap">
+		<div class="topbar">
+			<div class="logo">
+				<a href="/frontdesk/index.html"><img src="/frontdesk/images/logo.png" alt=""></a>
+
+				<div>
+
+				</div>
+			</div>
+			<div class="search">
+				<form action="/frontdesk/product/routeList">
+					<input name="productName" type="text" placeholder="" class="search_input" autocomplete="off" th:value="${productName}">
+					<button type="submit" class="search-button">Search</button>
+				</form>
+			</div>
+
+			<a th:href="@{/frontdesk/product/addPage}">
+				<button type="button" class="AD-post">
+					<div class="AD-post-t"><b>POST!</b></div>
+				</button>
+			</a>
+
+
+		</div>
+	</div>
+
+	<div class="navitem">
+		<ul class="nav"></ul>
+	</div>
+
+	<script>
+		$(function () {
+			$.get("/frontdesk/category/all",function (categories) {
+				var str = "<li class=\"nav-active\"><a href=\"/frontdesk/index.html\">Home</a></li>";
+				for (var i =0 ; i <categories.length; i++){
+					str += "<li><a href=\"/frontdesk/product/routeList?cid="+categories[i].cid+"\">"+categories[i].cname+"</a></li>"
+				}
+				$(".nav").html(str);
+			})
+		})
+	</script>
+
+</header>
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Role Index</title>
+    <th:block th:replace="/backstage/common_recources::common_css"></th:block>
+    <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini">
+
+
+<div class="wrapper">
+    <header th:replace="~{/backstage/common_header::header}"></header>
+    <header th:replace="~{/backstage/common_sidebar::sidebar}"></header>
+
+    <div class="content-wrapper">
+
+        <section class="content-header">
+            <h1>
+                Role
+                <small>Role List</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/backstage/index"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li><a href="/backstage/role/all">Role</a></li>
+                <li class="active">Role List</li>
+            </ol>
+        </section>
+
+        <section class="content">
+
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">List</h3>
+                </div>
+
+                <div class="box-body">
+
+                    <div class="table-box">
+
+                        <div class="pull-left">
+                            <div class="form-group form-inline">
+                                <div class="btn-group">
+
+                                    <a th:href="@{/backstage/role_add}">
+                                        <button type="button" class="btn btn-default" title="New">
+                                            <i class="fa fa-file-o"></i> New
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+
+                            <thead>
+                            <tr>
+                                <th class="" style="padding-right:0px;">
+                                    <input id="selall" type="checkbox" class="icheckbox_square-blue">
+                                </th>
+                                <th >Role Name</th>
+                                <th >Description</th>
+                                <th class="text-center">Operation</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr th:each="role:${rolePage.records}">
+                                    <td><input name="ids" type="checkbox"></td>
+                                    <td th:text="${role.roleName}"></td>
+                                    <td th:text="${role.roleDesc}"></td>
+
+                                    <td class="text-center">
+                                        <a th:href="@{/backstage/role/edit(rid=${role.rid})}" class="btn bg-olive btn-xs">Edit</a>
+                                        <a th:onclick="|javascript:del(${role.rid})|" class="btn bg-olive btn-xs">Delete</a>
+                                        <a th:href="@{/backstage/role/findPermission(rid=${role.rid})}" class="btn bg-olive btn-xs">Sign Permission</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                        <!--数据列表/-->
+                    </div>
+                    <!-- 数据表格 /-->
+                </div>
+                <!-- /.box-body -->
+
+                <!-- .box-footer-->
+                <div class="box-footer">
+                    <div class="pull-left">
+                        <div class="form-group form-inline">
+                            Pages:<span th:text="${rolePage.pages}"></span>
+                            Result:<span th:text="${rolePage.total}"></span>
+                        </div>
+                    </div>
+
+                    <div class="box-tools pull-right">
+                        <ul class="pagination"></ul>
+                    </div>
+                </div>
+                <!-- /.box-footer-->
+
+        </section>
+        <!-- 正文区域 /-->
+    </div>
+
+    <header th:replace="/backstage/common_footer::footer"></header>
+</div>
+
+<script th:inline="javascript">
+    
+    function del(rid) {
+        if (confirm("Confirm your option")){
+            location.href="/backstage/role/delete?rid="+rid;
+        }
+    }
+    
+    var currentPage = [[${rolePage.current}]];
+    var pages = [[${rolePage.pages}]];
+    $(".pagination").bootstrapPaginator({
+        bootstrapMajorVersion: 3,
+        currentPage: currentPage,
+        totalPages: pages,
+        numberOfPages: 5,
+        itemTexts: function (type, page, current) {
+            switch (type) {
+                case "first":
+                    return "First";
+                case "prev":
+                    return "Prev";
+                case "next":
+                    return "Next";
+                case "last":
+                    return "Last";
+                case "page":
+                    return page;
+            }
+        },
+        onPageClicked: function (event, originalEvent, type, page) {
+            location.href =  "/backstage/role/all?page=" + page;
+        }
+    })
+</script>
+
+</body>
+</html>
