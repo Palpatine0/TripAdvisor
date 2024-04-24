@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="icon" type="image/x-icon" href="/icon.ico" />
     <meta charset="utf-8">
     <title>Details</title>
 
@@ -166,5 +167,21 @@
 
 
 </body>
+
+<script>
+    //refresh
+    function refreshPage() {
+        location.reload();
+    }
+
+    document.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            refreshPage();
+        }
+    });
+
+    var hh3 = document.querySelector("h3");
+    hh3.style.color = "#a02626";
+</script>
 
 </html>

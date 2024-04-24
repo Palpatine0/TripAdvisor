@@ -38,34 +38,46 @@ public class ProductControllerFD {
     @Autowired
     private CommentsService commentsService;
 
+
+    @RequestMapping("/all")
+    @ResponseBody
+    public List<Product> all(){
+        return productService.findAll();
+    }
+
+
+
     @RequestMapping("/routeList")
-    public ModelAndView findProduct(Integer cid,String productName,
+    public ModelAndView findProduct(@RequestParam(defaultValue = "0")Integer cid, String productName,
                                     @RequestParam(defaultValue = "1") int page,
-                                    @RequestParam(defaultValue = "15") int size){
+                                    @RequestParam(defaultValue = "5") int size) {
         ModelAndView modelAndView = new ModelAndView();
         Page<Product> productPage = productService.findProduct(cid, productName, page, size);
-        modelAndView.addObject("productPage",productPage);
-        modelAndView.addObject("cid",cid);
-        modelAndView.addObject("productName",productName);
+        modelAndView.addObject("productPage", productPage);
+        modelAndView.addObject("cid", cid);
+        modelAndView.addObject("productName", productName);
         modelAndView.setViewName("/frontdesk/route_list");
         return modelAndView;
     }
 
+
+
+
     @RequestMapping("/routeListIndexed")
-    public ModelAndView findProductIndexed(Integer cid,String productName,
-                                    @RequestParam(defaultValue = "1") int page,
-                                    @RequestParam(defaultValue = "15") int size){
+    public ModelAndView findProductIndexed(Integer cid, String productName,
+                                           @RequestParam(defaultValue = "1") int page,
+                                           @RequestParam(defaultValue = "15") int size) {
         ModelAndView modelAndView = new ModelAndView();
         Page<Product> productPage = productService.findProduct(cid, productName, page, size);
-        modelAndView.addObject("productPage",productPage);
-        modelAndView.addObject("cid",cid);
-        modelAndView.addObject("productName",productName);
+        modelAndView.addObject("productPage", productPage);
+        modelAndView.addObject("cid", cid);
+        modelAndView.addObject("productName", productName);
         modelAndView.setViewName("/frontdesk/route_list");
         return modelAndView;
     }
 
     @RequestMapping("/routeDetails")
-    public ModelAndView findDeatails(Integer pid, HttpSession session){
+    public ModelAndView findDeatails(Integer pid, HttpSession session) {
         ModelAndView modelAndView = new ModelAndView();
         Product product = productService.findById(pid);
         List<Comments> comments = commentsService.findByPid(pid);
@@ -73,40 +85,40 @@ public class ProductControllerFD {
         //favorite judge
         //cant favorite if not in login status
         Object member = session.getAttribute("member");
-        if (member==null){
-            modelAndView.addObject("favorite",false);
-        }else {
-            Member memberr=(Member)member;
+        if (member == null) {
+            modelAndView.addObject("favorite", false);
+        } else {
+            Member memberr = (Member) member;
             boolean favorite = favoriteService.findFavorite(pid, memberr.getMid());
-            modelAndView.addObject("favorite",favorite);
+            modelAndView.addObject("favorite", favorite);
         }
 
-        modelAndView.addObject("product",product);
-        modelAndView.addObject("comments",comments);
+        modelAndView.addObject("product", product);
+        modelAndView.addObject("comments", comments);
         modelAndView.setViewName("/frontdesk/route_detail");
         return modelAndView;
     }
 
     @RequestMapping("/addPage")
-    public ModelAndView add(){
+    public ModelAndView add() {
         List<Category> categoryList = categoryService.findAll();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("categoryList",categoryList);
+        modelAndView.addObject("categoryList", categoryList);
         modelAndView.setViewName("/frontdesk/FFFproduct_add");
         return modelAndView;
     }
 
     @RequestMapping("/add")
-    public String add(Product pid,HttpSession session){
+    public String add(Product pid, HttpSession session) {
 
-        Member member=(Member)session.getAttribute("member");
+        Member member = (Member) session.getAttribute("member");
 
-        int submissionLimit=0;
+        int submissionLimit = 0;
         if (member.getScore() < 200) {
             submissionLimit = 1;
-        } else if(member.getScore() < 400) {
+        } else if (member.getScore() < 400) {
             submissionLimit = 5;
-        }else {
+        } else {
             submissionLimit = Integer.MAX_VALUE;
         }
 
@@ -117,7 +129,7 @@ public class ProductControllerFD {
         }
 
         productService.add(pid);
-        memberService.incrementScoreByMemberId(member,10);
+        memberService.incrementScoreByMemberId(member, 10);
 
         return "redirect:/frontdesk/index.html";
     }
@@ -130,12 +142,12 @@ public class ProductControllerFD {
         String realPath = ResourceUtils.getURL("classpath:").getPath() + "/static/upload";
         // 1.2 check if the pack exist, create one if its not
         File dir = new File(realPath);
-        if (!dir.exists()){
+        if (!dir.exists()) {
             dir.mkdir();
         }
         // 2.get the upload file name
         String filename = file.getOriginalFilename();
-        filename= UUID.randomUUID()+filename;
+        filename = UUID.randomUUID() + filename;
         // 3.create empty file
         File newFile = new File(dir, filename);
         // 4.upload file to this empty file
@@ -143,8 +155,10 @@ public class ProductControllerFD {
         // 5.construct result type
         WEditorResult wEditorResult = new WEditorResult();
         wEditorResult.setErrno(0);
-        String[] data={"/upload/"+filename};
+        String[] data = {"/upload/" + filename};
         wEditorResult.setData(data);
         return wEditorResult;
     }
+
+
 }

@@ -2,9 +2,18 @@
 
 <header class="header" th:fragment="header">
 
+	<link rel="icon" type="image/x-icon" href="/icon.ico" />
+
 	<style>
+		*{
+			font-family: Arial
+		}
 		.header {
 			width: 100%
+		}
+
+		button{
+			font-family: Arial
 		}
 
 
@@ -233,7 +242,9 @@
 			$.get("/frontdesk/category/all",function (categories) {
 				var str = "<li class=\"nav-active\"><a href=\"/frontdesk/index.html\">Home</a></li>";
 				for (var i =0 ; i <categories.length; i++){
-					str += "<li><a href=\"/frontdesk/product/routeList?cid="+categories[i].cid+"\">"+categories[i].cname+"</a></li>"
+					if (categories[i].cid!=100){
+						str += "<li><a href=\"/frontdesk/product/routeList?cid="+categories[i].cid+"\">"+categories[i].cname+"</a></li>"
+					}
 				}
 				$(".nav").html(str);
 			})

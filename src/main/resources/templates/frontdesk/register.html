@@ -1,156 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF-8">
-	<title>Sign Up</title>
-	<link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
-	<link rel="stylesheet" href="/frontdesk/css/register.css">
-	<script src="/frontdesk/js/jquery-3.3.1.js"></script>
+    <link rel="icon" type="image/x-icon" href="/icon.ico"/>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="/frontdesk/css/common.css">
+    <link rel="stylesheet" href="/frontdesk/css/register.css">
+    <script src="/frontdesk/js/jquery-3.3.1.js"></script>
 
-	<style type="text/css">
-		.a{
-			position: absolute;
-			left: -260px;
-			top: 30px;
-		}
-		.a img {
-			background-color: gainsboro;
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			position: relative;
-		}
-	</style>
+    <style type="text/css">
+        * {
+            font-family: Arial;
+        }
+
+        .a {
+            position: absolute;
+            left: -260px;
+            top: 30px;
+        }
+
+        .a img {
+            background-color: gainsboro;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
 <div class="simple_header">
-	<div class="logo">
-		<img src="/frontdesk/images/logo.png" alt="">
-	</div>
-	<a class="link" href="/frontdesk/index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+    <div class="logo">
+        <img src="/frontdesk/images/logo.png" alt="">
+    </div>
+    <a class="link" href="/frontdesk/index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
 </div>
 <div class="rg_layout">
-	<div class="rg_form clearfix">
-		<div class="rg_form_left">
-			<p>Sign Up</p>
-		</div>
+    <div class="rg_form clearfix">
+
+        <div class="rg_form_left">
+            <p>Sign Up</p>
+        </div>
 
 
+        <div class="rg_form_center" style="position: relative;top: 60px;left: 135px">
 
-		<div class="rg_form_center" style="position: relative;top: 60px;left: 135px">
+            <div class="a">
+                <h1><b>Your Avatar</b></h1>
+                <img id="avatar" th:src="@{/frontdesk/img/no-img.png}" alt="Avatar" style="position: relative">
+                <input type="file" id="imageFile" name="file" style="position: relative">
+            </div>
 
-			<div class="a">
-				<h1><b>Your Avatar</b></h1>
-				<img id="avatar" th:src="@{/frontdesk/img/no-img.png}" alt="Avatar" style="position: relative">
-				<input type="file" id="imageFile" name="file" style="position: relative">
-			</div>
+            <form id="registerForm" th:action="@{/frontdesk/member/register}" method="post">
 
-			<form id="registerForm" th:action="@{/frontdesk/member/register}" method="post">
+                <input type="hidden" id="hiddenAvatar" name="avatar">
 
-				<input type="hidden" id="hiddenAvatar" name="avatar">
+                <table style="margin-top: 25px;">
+                    <tr>
+                        <td class="td_left">
+                            <label for="username">Username</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="username" name="username" placeholder="Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="password">Password</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="password" name="password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="email">Email</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="telephone">Cell</label>
+                        </td>
+                        <td class="td_right">
+                            <input type="text" id="telephone" name="phoneNum" placeholder="Cell">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="sex">Gender</label>
+                        </td>
+                        <td class="td_right gender">
+                            <input type="radio" id="male" name="sex" value="Male" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="sex" value="Female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
 
-				<table style="margin-top: 25px;">
-					<tr>
-						<td class="td_left">
-							<label for="username">Username</label>
-						</td>
-						<td class="td_right">
-							<input type="text" id="username" name="username" placeholder="Username">
-						</td>
-					</tr>
-					<tr>
-						<td class="td_left">
-							<label for="password">Password</label>
-						</td>
-						<td class="td_right">
-							<input type="text" id="password" name="password" placeholder="Password">
-						</td>
-					</tr>
-					<tr>
-						<td class="td_left">
-							<label for="email">Email</label>
-						</td>
-						<td class="td_right">
-							<input type="text" id="email" name="email" placeholder="Email">
-						</td>
-					</tr>
-					<tr>
-						<td class="td_left">
-							<label for="telephone">Cell</label>
-						</td>
-						<td class="td_right">
-							<input type="text" id="telephone" name="phoneNum" placeholder="Cell">
-						</td>
-					</tr>
-					<tr>
-						<td class="td_left">
-							<label for="sex">Gender</label>
-						</td>
-						<td class="td_right gender">
-							<input type="radio" id="male" name="sex" value="Male" checked>
-							<label for="male">Male</label>
-							<input type="radio" id="female" name="sex" value="Female">
-							<label for="female">Female</label>
-						</td>
-					</tr>
+                    <input type="hidden" name="score" value="50">
 
-					<input type="hidden" name="score" value="50">
-
-					<tr>
-						<td class="td_left">
-							<label for="check">Verify</label>
-						</td>
-						<td class="td_right check">
-							<input type="text" id="check" name="checkCode" class="check">
-							<img src="/frontdesk/checkCode" height="32px" alt="Verify Code" onclick="changeCheckCode(this)">
-						</td>
-					</tr>
-					<tr>
-						<td class="td_left"></td>
-						<td class="td_right check">
-							<input type="submit" class="submit" value="Sign Up">
-							<span id="msg" style="color: red;" th:text="${message}"></span>
-						</td>
-					</tr>
-				</table>
-			</form>
-		</div>
-		<div class="rg_form_right">
-			<p>
-				Have an account already? <a href="/frontdesk/login"><b>Sign In</b></a>
-			</p>
-		</div>
-	</div>
+                    <tr>
+                        <td class="td_left">
+                            <label for="check">Verify</label>
+                        </td>
+                        <td class="td_right check">
+                            <input type="text" id="check" name="checkCode" class="check">
+                            <img src="/frontdesk/checkCode" height="32px" alt="Verify Code"
+                                 onclick="changeCheckCode(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"></td>
+                        <td class="td_right check">
+                            <input type="submit" class="submit" value="Sign Up">
+                            <span id="msg" style="color: red;" th:text="${message}"></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="rg_form_right">
+            <p>
+                Have an account already? <a href="/frontdesk/login"><b>Sign In</b></a>
+            </p>
+        </div>
+    </div>
 </div>
 
 <footer th:replace="~{/frontdesk/footer::footer}"></footer>
 
 <script>
-	$(function () {
-		$("#imageFile").change(function () {
-			var formData = new FormData();
-			formData.append("file", $(this)[0].files[0]);
+    $(function () {
+        $("#imageFile").change(
+            function () {
+                var formData = new FormData();
+                formData.append("file", $(this)[0].files[0]);
+                $.ajax({
+                    url: "/frontdesk/member/upload",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (imageUrl) {
+                        $("#avatar").attr("src", imageUrl);
+                        $("#hiddenAvatar").val(imageUrl);
+                    },
+                });
+            });
+    });
 
-			$.ajax({
-				url: "/frontdesk/member/upload",
-				type: "POST",
-				data: formData,
-				processData: false,
-				contentType: false,
-				success: function (imageUrl) {
-					$("#avatar").attr("src", imageUrl);
-					$("#hiddenAvatar").val(imageUrl);
-				},
-				error: function () {
-					// Handle the error as per your requirement
-				}
-			});
-		});
-	});
-
-	function changeCheckCode(img) {
-		img.src = "/frontdesk/checkCode?" + new Date().getTime();
-	}
+    function changeCheckCode(img) {
+        img.src = "/frontdesk/checkCode?" + new Date().getTime();
+    }
 </script>
 </body>
 </html>

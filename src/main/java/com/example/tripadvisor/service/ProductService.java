@@ -3,12 +3,15 @@ package com.example.tripadvisor.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.tripadvisor.mapper.ProductMapper;
+import com.example.tripadvisor.pojo.Category;
 import com.example.tripadvisor.pojo.Permission;
 import com.example.tripadvisor.pojo.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 @Service
 @Transactional
@@ -54,9 +57,14 @@ public class ProductService {
         return selectedPage;
     }
 
+
+
     public void delete(Product pid){
         productMapper.deleteByProductId(pid.getPid());
         productMapper.deleteById(pid);
     }
 
+    public List<Product> findAll(){
+        return productMapper.selectList(null);
+    }
 }

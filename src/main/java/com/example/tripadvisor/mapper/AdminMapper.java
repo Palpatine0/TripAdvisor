@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface AdminMapper extends BaseMapper<Admin> {
+public interface AdminMapper extends BaseMapper<Admin>{
     //admin information browse
     Admin findDesc(Integer aid);
 

@@ -49,7 +49,7 @@
             LEFT JOIN role_permission
                 ON role.rid = role_permission.rid
             LEFT JOIN permission
-                ON role_permission.pid = permission.pid
+e                ON role_permission.pid = permission.pid
         WHERE admin.username = #{username}
         AND permission.pid is not null
     </select>

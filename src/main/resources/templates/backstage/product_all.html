@@ -2,9 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="/icon.ico" />
     <title>Post Index</title>
     <th:block th:replace="/backstage/common_recources::common_css"></th:block>
     <th:block th:replace="/backstage/common_recources::common_js"></th:block>
+    <script src="/backstage/js/bootstrap-paginator.js"></script>
 </head>
 
 <body class="hold-transition skin-purple sidebar-mini">
@@ -122,6 +124,7 @@
 
     var currentPage = [[${productPage.current}]];
     var pages = [[${productPage.pages}]];
+
     $(".pagination").bootstrapPaginator({
         bootstrapMajorVersion: 3,
         currentPage: currentPage,
@@ -141,7 +144,7 @@
                     return page;
             }
         },
-        onPageClicked: function (event, originalEvent, type, page) { // 点击页码执行的方法
+        onPageClicked: function (event, originalEvent, type, page) {
             location.href =  "/backstage/product/all?page=" + page;
         }
     })

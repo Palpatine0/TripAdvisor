@@ -1,7 +1,10 @@
+<!--route_list-->
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="/icon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +13,20 @@
     <link rel="stylesheet" href="/frontdesk/css/search.css">
     <script src="/frontdesk/js/jquery-3.3.1.js"></script>
     <script src="/frontdesk/js/bootstrap-paginator.js"></script>
+
     <script src="static/frontdesk/js/bootstrap.min.js"></script>
+    <script src="/backstage/js/bootstrap-paginator.js"></script>
+    <script src="/frontdesk/js/pullToRefresh.js"></script>
+
+    <style>
+        * {
+            font-family: Arial;
+        }
+        .title{
+            font-family: Arial;
+        }
+    </style>
+
 
 </head>
 
@@ -24,7 +40,6 @@
         <div class="left">
 
             <ul>
-
                 <li th:each="product:${productPage.records}">
                     <img th:src="${product.PImage}" width="320">
                     <div class="content">
@@ -37,12 +52,12 @@
                         </p>
                     </div>
                 </li>
-
             </ul>
 
             <div class="pageNum">
                 <ul class="pagination"></ul>
             </div>
+
             <script th:inline="javascript">
                 var currentPage = [[${productPage.current}]];
                 var pages = [[${productPage.pages}]];
@@ -52,7 +67,7 @@
                     bootstrapMajorVersion: 3,
                     currentPage: currentPage,
                     totalPages: pages,
-                    numberOfPages: 15,
+                    numberOfPages: 5,
                     itemTexts: function (type, page, current) {
                         switch (type) {
                             case "first":
@@ -68,9 +83,7 @@
                         }
                     },
                     onPageClicked: function (event, originalEvent, type, page) {
-                        location.href =  "/frontdesk/product/routeList?cid=" + cid +
-                            "&page=" + page +
-                            "&productName="+productName;
+                        location.href =  "/frontdesk/product/routeList?page=" + page+"&cid=" + cid;
                     }
                 })
             </script>
@@ -148,5 +161,21 @@
 <footer th:replace="~{/frontdesk/footer::footer}"></footer>
 
 </body>
+
+<script>
+
+    //refresh
+    function refreshPage() {
+        location.reload(); // Reload the entire page in this example
+    }
+
+    document.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            refreshPage();
+        }
+    });
+
+
+</script>
 
 </html>

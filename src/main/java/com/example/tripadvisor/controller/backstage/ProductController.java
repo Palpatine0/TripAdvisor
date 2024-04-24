@@ -34,10 +34,12 @@ public class ProductController {
     @RequestMapping("/all")
     public ModelAndView all(@RequestParam(defaultValue = "1") int page,
                             @RequestParam(defaultValue = "15") int size){
+
         ModelAndView modelAndView = new ModelAndView();
         Page<Product> productPage = productService.findPage(page, size);
         modelAndView.addObject("productPage",productPage);
         modelAndView.setViewName("/backstage/product_all");
+
         return modelAndView;
     }
 
