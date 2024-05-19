@@ -34,11 +34,11 @@
     <delete id="deleteAllRoles" parameterType="int" >
         DELETE FROM admin_role where aid = #{aid}
     </delete>
-    
+
     <insert id="addRole">
         INSERT into admin_role values (#{aid},#{rid})
     </insert>
-    
+
     <select id="findAllPermission" parameterType="string" resultType="com.example.tripadvisor.pojo.Permission">
         SELECT DISTINCT permission.*
             FROM admin
@@ -49,7 +49,7 @@
             LEFT JOIN role_permission
                 ON role.rid = role_permission.rid
             LEFT JOIN permission
-e                ON role_permission.pid = permission.pid
+                ON role_permission.pid = permission.pid
         WHERE admin.username = #{username}
         AND permission.pid is not null
     </select>

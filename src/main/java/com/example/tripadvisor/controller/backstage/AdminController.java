@@ -21,7 +21,7 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    @PreAuthorize("hasAnyAuthority('/admin/all')")
+    @PreAuthorize("hasAnyAuthzority('/admin/all')")
     @RequestMapping("/all")
     public ModelAndView all(@RequestParam(defaultValue = "1") int page,
                             @RequestParam(defaultValue = "10") int size){
