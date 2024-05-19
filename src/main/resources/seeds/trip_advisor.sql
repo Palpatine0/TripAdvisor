@@ -11,7 +11,7 @@
  Target Server Version : 80022 (8.0.22)
  File Encoding         : 65001
 
- Date: 20/05/2024 01:35:24
+ Date: 20/05/2024 02:34:19
 */
 
 SET NAMES utf8mb4;
@@ -30,7 +30,7 @@ CREATE TABLE `admin` (
   `status` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`aid`) USING BTREE,
   UNIQUE KEY `email` (`email`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of admin
@@ -48,6 +48,7 @@ INSERT INTO `admin` (`aid`, `email`, `username`, `password`, `phoneNum`, `status
 INSERT INTO `admin` (`aid`, `email`, `username`, `password`, `phoneNum`, `status`) VALUES (30, 'WEWXCaf', 'WEWXCaf', '$2a$10$5Siu.U8UEtkYT.oE9WMjnOHokvAwbeoEHSo.fwS5t./47haewptDe', 'WEWXCaf', 1);
 INSERT INTO `admin` (`aid`, `email`, `username`, `password`, `phoneNum`, `status`) VALUES (31, 'JOHN DON', 'JOHN DON', '$2a$10$Mhrx.VP/odOh5wr5Sa2zAOyrr2XgSw2WQ.aUiwl/kE6gijSAemxti', 'JOHN DON', 1);
 INSERT INTO `admin` (`aid`, `email`, `username`, `password`, `phoneNum`, `status`) VALUES (32, 'wafw', 'wafw', '$2a$10$qdxASt8pcPg.Fc10ubPjVOtJCknOIGkeSQ5fkvs6Jr3yMGsVGv4Ve', 'wafw', 1);
+INSERT INTO `admin` (`aid`, `email`, `username`, `password`, `phoneNum`, `status`) VALUES (33, '11', '11', '11', NULL, NULL);
 COMMIT;
 
 -- ----------------------------
@@ -106,7 +107,6 @@ CREATE TABLE `category` (
 BEGIN;
 INSERT INTO `category` (`cid`, `cname`) VALUES (5, 'Entertainment');
 INSERT INTO `category` (`cid`, `cname`) VALUES (100, 'Instructions');
-INSERT INTO `category` (`cid`, `cname`) VALUES (1, 'Learning');
 INSERT INTO `category` (`cid`, `cname`) VALUES (2, 'News');
 INSERT INTO `category` (`cid`, `cname`) VALUES (3, 'Travel');
 INSERT INTO `category` (`cid`, `cname`) VALUES (6, 'Work out');
